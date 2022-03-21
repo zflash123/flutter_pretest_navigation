@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_pretest_navigation/screens/navigate_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MaterialApp(
+    title: 'Navigation Basics',
+    home: FirstRoute(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
