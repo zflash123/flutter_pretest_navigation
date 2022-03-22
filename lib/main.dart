@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_pretest_navigation/screens/navigate_return_data.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
-      title: 'Returning Data',
-      home: HomeScreen(),
+    MaterialApp(
+      title: 'Passing Data',
+      home: TodosScreen(
+        todos: List.generate(
+          20,
+          (i) => Todo(
+            'Todo $i',
+            'A description of what needs to be done for Todo $i',
+          ),
+        ),
+      ),
     ),
   );
 }
